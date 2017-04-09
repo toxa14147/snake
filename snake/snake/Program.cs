@@ -10,7 +10,7 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            point p1 = new point(1,3,'*');
+            point p = new point(1,3,'*');
           
             //p1.Draw();
 
@@ -26,6 +26,8 @@ namespace snake
             line2.Drow();
             horisontalline line3 = new horisontalline(0, 78, 0, '+');
             line3.Drow();
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
             Console.ReadLine();
         }
        
