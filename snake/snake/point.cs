@@ -42,6 +42,7 @@ namespace snake
             {
                 y = y + offset;
             }
+           
         }
      public void Draw()
     {
@@ -58,5 +59,9 @@ namespace snake
             return x + "," + y + ", " + sym;
         }
 
+        internal bool IsHit(point p)
+        {
+            return p.x == this.x && p.y == this.y;
+        }
     }
 }
