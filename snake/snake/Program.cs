@@ -49,7 +49,7 @@ namespace snake
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKey(key.Key);
                 }
-                Thread.Sleep(100);
+                Thread.Sleep(280);
                 snake.Move();
             }
             
